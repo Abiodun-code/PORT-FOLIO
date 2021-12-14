@@ -1,0 +1,283 @@
+:root {
+    --background: #0A0A0B;
+    --btn-color: #FBE850;
+    --second-background: #2E3038;
+}
+
+    /* ======== FIRST MEDIA QUERY =========== */
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .nav_menu {
+        position: fixed;
+        top: 8%;
+        padding: 2em 1.5em;
+        /* z-index: 90000; */
+        right: -100%;
+        height: 80vh;
+        width: 50%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        text-align: center;
+        border-radius: 10px 0 0 10px;
+        background-color: var(--second-background);
+        transition: .6s;
+    }
+
+    .show_menu {
+        right: 0;
+    }
+
+    .sponsors_content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sponsors_item  {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+
+    .portfolio_container,
+    .artticle_container,
+    .contact_container {
+        padding: 1.5em 70px;
+    }
+
+    .main_hero {
+        font-size: 2.4em;
+    }
+}
+
+
+    /* ======== SECOND MEDIA QUERY =========== */
+@media screen and (min-width: 700px) and (max-width: 850px) {
+    .hero_btn {
+        padding: 1em;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 8%;
+        padding: 2em 1.5em;
+        /* z-index: 90000; */
+        right: -100%;
+        height: 80vh;
+        width: 60%;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        text-align: center;
+        border-radius: 10px 0 0 10px;
+        background-color: var(--second-background);
+        transition: .6s;
+    }
+
+    .show_menu {
+        right: 0;
+    }
+
+    .sponsors_content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .sponsors_item  {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio_container,
+    .article_container,
+    .contact_container {
+        padding: 4em 70px;
+    }
+
+    .main_hero {
+        font-size: 2.8em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .contact_card {
+        opacity: 0;
+        pointer-events: none;
+        top: 2%;
+        left: 8%;
+    } 
+
+    .show_card {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+
+    /* ======== THIRD MEDIA QUERY =========== */
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+    .nav_menu {
+        display: flex;
+        gap: 2em;
+    }
+
+    .nav_item {
+        display: flex;
+        gap: 3em;
+    }
+
+    .nav_list {
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 1.5em 20px;
+    }
+
+    .menu_container, .menu {
+        display: none;
+    }
+
+    .navbar.scroll .cta_link {
+        padding: .6em;
+        background-color: var(--background);
+        color: #fff;
+    }
+
+    .navbar.scroll .nav_link {
+        color: #000;
+    }
+
+    .hero_container {
+        padding-top: 100px;
+    }
+
+    .sponsors_item  {
+        display: grid;
+        gap: 4em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio_container,
+    .article_container,
+    .contact_container {
+        padding: 4em 90px;
+    }
+
+    .hero_btn {
+        padding: 1em;
+        font-size: 1.1em;
+    }
+
+    .main_hero {
+        font-size: 3.2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+        width: 85%;
+        line-height: 2em;
+    }
+}
+
+
+    /* ======== LAST MEDIA QUERY =========== */
+@media screen and (min-width: 1000px) {
+    .nav_menu {
+        display: flex;
+        gap: 2em;
+    }
+
+    .nav_item {
+        display: flex;
+        gap: 3em;
+    }
+
+    .nav_list {
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 1.5em 100px;
+    }
+
+    .menu_container, .menu {
+        display: none;
+    }
+
+    .navbar.scroll .cta_link {
+        padding: .6em;
+        background-color: var(--background);
+        color: #fff;
+    }
+
+    .navbar.scroll .nav_link {
+        color: #000;
+    }
+
+    .hero_container {
+        padding-top: 100px;
+    }
+
+    .sponsors_item  {
+        display: grid;
+        gap: 4em;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hero_content {
+        width: 70%;
+        padding: 1.5em 50px;
+    }
+
+    .main_hero {
+        font-size: 3.4em;
+    }
+
+    .subtitle {
+        font-size: 1.3em;
+    }
+
+    .hero_btn {
+        padding: 1.2em;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+
+    .portfolio_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5em 50px;
+    }
+
+    .portfolio_subtitle {
+        font-size: 1.1em;
+    }
+
+    .article_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.5em 50px;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .contact_content {
+        width: 50%;
+    }
+
+    .contact_title {
+        font-size: 3em;
+    }
+
+    .contact_subtitle {
+        font-size: 1.3em;
+    }
+
+    .contact_card {
+        height: 500px;
+    }
+}
